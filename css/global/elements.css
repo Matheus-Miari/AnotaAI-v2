@@ -1,0 +1,29 @@
+:root {
+    /* Cores principais */
+    --color-primary-dark: #083358; /* Azul escuro */
+    --color-primary: #0F4471;       /* Azul médio */
+    --color-accent: #FC3C3C;        /* Vermelho de destaque */
+    --color-light: #F6F6F6;         /* Fundo claro */
+
+    /* Variações */
+    --color-primary-light: #2f5e8d;
+    --color-accent-dark: #c92f2f;
+    --color-light-contrast: #e0e0e0;
+
+    /* Texto */
+    --text-on-dark: #ffffff;
+    --text-on-light: #1a1a1a;
+
+    /* Botões */
+    --button-bg: var(--color-accent);
+    --button-text: var(--text-on-dark);
+    --button-hover: var(--color-accent-dark);
+
+    /* Bordas e sombras */
+    --border-color: #dcdcdc;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    /* Outros */
+    --link-color: var(--color-primary);
+    --link-hover: var(--color-primary-light);
+}

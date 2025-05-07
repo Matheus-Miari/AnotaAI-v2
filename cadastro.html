@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/pages/cadastro/cadastro.css">
+    <link rel="stylesheet" href="css/global/global.css">
+</head>
+<body>
+    <div class="div_cadastro_form">
+        <form action="" method="get" class="cadastro_form"> 
+            <fieldset class="cadastro_fieldset">Cadastre se<br>
+                <strong>Anota<span>AI</span></strong></fieldset>
+            <div class="div_cadastro_username"> 
+                <label for="cadastro_username">Usuário</label>
+                <input type="text" name="cadastro_username" id="cadastro_username" required class="cadastro_input">
+            </div>
+            <div class="div_password">
+                <label for="cadastro_password">Senha</label>
+                <input type="password" name="cadastro_password" id="cadastro_password" class="cadastro_input" required minlength="3" maxlength="5"> 
+            </div>
+            <div class="div_password">
+                <label for="confirmar_senha">Confirmar Senha</label>
+                <input type="password" name="confirmar_senha" id="confirmar_senha" class="cadastro_input" required minlength="3" maxlength="5"> 
+            </div>
+            <div class="div_cadastro_submit">
+                <input type="submit" name="cadastrar" id="cadastrar" value="Cadastrar" class="btn_cadastro_cadastrar">
+            </div>
+            
+        </form>
+        <div class="div_cadastro_voltar">
+            <p class="div_ntc_p">Tem uma conta ?</p><a href="index.html" class="btn_link_cadastro">Voltar !</a>
+        </div>
+    </div>
+        <!-- Script para validar as senhas -->
+    <script>
+        function validarSenhas() {
+            const senha = document.getElementById('cadastro_password').value;
+            const confirmar = document.getElementById('confirmar_senha').value;
+            
+            if (senha !== confirmar) {
+                alert('As senhas não coincidem. Tente novamente.');
+                return false; // Impede o envio do formulário
+            }
+            return true; // Permite o envio
+        }
+    </script>
+</body>
+</html>

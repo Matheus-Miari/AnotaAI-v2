@@ -1,0 +1,23 @@
+@import url(header.css);
+@import url(sectionOne.css);
+@import url(sectionTwo.css);
+
+.criarAnot{
+    text-align: center;
+    margin-top: 4rem;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.criarAnot a{
+    background-color: var(--color-accent);
+    padding: 8px;
+    border-radius: 0 6px;
+    color: var(--text-light);
+    font-weight: 700;
+}
+.criarAnot a:hover{
+    background-color: var(--link-hover);
+    transition: all 0.3s ease;
+}
