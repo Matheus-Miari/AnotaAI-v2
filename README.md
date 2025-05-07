@@ -1,3 +1,4 @@
+<img src='img/Captura de tela de 2025-05-07 17-20-05.png'>
 <h1 align="center">📝 Anota Aí</h1>
 
 <p align="center">
